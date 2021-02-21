@@ -1,0 +1,605 @@
+/************************* root elemente ************************/  
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	background: white;
+	color: #666;
+}
+a {
+	color: #242672;
+}
+a:focus {
+	outline:none !important;
+}
+#ie6hinweis {
+	position: absolute;
+	left:50%;
+	width:930px;
+	padding: 10px;
+	margin-left: -474px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	z-index: 300;
+	line-height: 13px;
+}
+/************************* HauptContainerdefinitionen ****************/  
+
+#wrapper {
+	position: absolute;
+	left:50%;
+	top:10px;
+	width:950px;
+	margin-left: -475px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	min-height: 97%;
+}
+#logohead, #mainnav, #header, #flashheader, #secnav, #content, #breadcrumb, #footer {
+	width:930px;
+	margin:0px auto;
+}
+#logohead {
+	height: 45px;
+	margin-top:70px;
+}
+#mainnav {
+	margin-top: 2px;
+	height: 20px;
+	background-color: #999999;
+	overflow:hidden;
+}
+#header {
+	margin-top: 10px;
+	height: 130px;
+}
+#flashheader {
+	margin-top:10px;
+	height: 250px;
+}
+#secnav {
+	margin-top:10px;
+	height: 20px;
+	background-color: #e6e6e6;
+}
+#breadcrumb {
+	margin-top:3px;
+	height:30px;
+	font-size: 11px;
+	color: #999;
+	font-weight:bold;
+}
+#breadcrumb a {
+	color: #999;
+	text-decoration: none;
+	font-weight:normal;
+}
+#breadcrumb a:hover {
+	color: #242672;
+	text-decoration: underline;
+}
+#footer {
+	display: block;
+	clear: both;
+	margin-top: 10px;
+	font-size: 11px;
+}
+#footer ul, #footer ul li {
+	margin: 0;
+	padding:0;
+	list-style-type: none;
+	float:left;
+}
+#footer a {
+	color: #999;
+	text-decoration:none !important;
+}
+#footer a:hover {
+	text-decoration:underline !important;
+	color: #242672;
+}
+/************************* div #logohead  ****************/ 
+
+
+
+#langswitch {
+	font-size: 11px;
+	float:left;
+	margin-top:27px;
+}
+#logo {
+	float:right;
+}
+#langswitch a {
+	color: #999999;
+	text-decoration: none;
+}
+#langswitch a:hover {
+	background-color: #242672;
+	color:white;
+}
+/************************* div #mainnav  ****************/ 
+
+
+
+#mainnav ul, #mainnav ul li {
+	margin: 0;
+	padding:0;
+}
+#mainnav ul li {
+	float:left;
+	display: inline;
+	height: 20px;
+	width:155px;
+	line-height:20px;
+	vertical-align: middle;
+	list-style-type: none;
+}
+#mainnav ul li a {
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+	float:left;
+	display: inline;
+	margin: 0 0 0 0;
+	padding: 0 0 0 10px;
+	height: 20px;
+	width:143px;
+	line-height:20px;
+	text-align: left;
+	border-right: 2px solid white;
+	background-color: #999999;
+}
+#mainnav ul li a:hover {
+	background-color: #242672;
+}
+#mainnav ul li a.mainaktiv {
+	background-color: #242672;
+}
+#searchbox {
+	float:right;
+}
+#searchbox input {
+	padding:0 10px 0 10px;
+	height: 18px;
+	width: 111px;
+	border: 1px solid #999999;
+	color: #333;
+	font-size: 11px;
+	line-height:20px;
+	float:left;
+}
+#searchbox input.absenden {
+	margin:0;
+	padding:0;
+	border: none;
+	height: 20px;
+	width: 22px;
+	float:none;
+}
+/************************* div #secnav  ****************/
+
+ 
+
+ #secnav ul, #secnav ul li {
+	margin: 0;
+	padding:0;
+}
+#secnav ul {
+	position: absolute;
+}
+#secnav ul li {
+	float:left;
+	display: inline;
+	height: 20px;
+	width:186px;
+	line-height:20px;
+	vertical-align: middle;
+	list-style-type: none;
+}
+#secnav ul li a {
+	font-size: 12px;
+	color: #666;
+	text-decoration: none;
+	float:left;
+	display: inline;
+	margin: 0 0 0 0;
+	padding: 0 0 0 10px;
+	height: 20px;
+	width:174px;
+	line-height:19px;
+	text-align: left;
+	border-right: 2px solid white;
+	background-color: #e6e6e6;
+}
+#secnav ul li.farbe5 a {
+	width:176px;
+	/* Edit Vetron Button 25-04-12 */
+	background-color: #999;
+	color: white;
+	/* End Edit */
+}
+#secnav ul li a:hover, #secnav ul li a.secaktiv {
+	background-color: #242672 !important;
+	color: white !important;
+}
+#secnav ul li.farbe1 a:hover, #secnav ul li.farbe1 a.secaktiv, #secnav ul li.farbe1:hover a {
+	background-color: #4874BA !important;
+	color: white !important;
+}
+#secnav ul li.farbe2 a:hover, #secnav ul li.farbe2 a.secaktiv, #secnav ul li.farbe2:hover a {
+	background-color: #74B3FF !important;
+	color: white !important;
+}
+#secnav ul li.farbe3 a:hover, #secnav ul li.farbe3 a.secaktiv, #secnav ul li.farbe3:hover a {
+	background-color: #202A58 !important;
+	color: white !important;
+}
+#secnav ul li.farbe4 a:hover, #secnav ul li.farbe4 a.secaktiv, #secnav ul li.farbe4:hover a {
+	background-color: #193D81 !important;
+	color: white !important;
+}
+#secnav ul li.farbe5 a:hover, #secnav ul li.farbe5 a.secaktiv, #secnav ul li.farbe5:hover a {
+	background-color: #2C4EAC !important;
+	color: white !important;
+}
+#secnav ul li.farbe1 ul, #secnav ul li.farbe2 ul, #secnav ul li.farbe3 ul, #secnav ul li.farbe4 ul, #secnav ul li.farbe5 ul {
+	position: absolute;
+	top: 20px;
+	border-top: 2px solid white;
+}
+#secnav ul li.farbe1 ul {
+	left:0px;
+}
+#secnav ul li.farbe2 ul {
+	left:186px;
+}
+#secnav ul li.farbe3 ul {
+	left:372px;
+}
+#secnav ul li.farbe4 ul {
+	left:558px;
+}
+#secnav ul li.farbe5 ul {
+	left:744px;
+}
+#secnav ul li ul li {
+	float: none !important;
+	width: 221px !important;
+	display: none;
+}
+#secnav ul li ul li a {
+	width: 221px !important;
+	float:none !important;
+	display:block !important;
+	border: none;
+	color: white !important;
+}
+#secnav ul li.farbe5 ul li, #secnav ul li.farbe5 ul li a {
+	width: 176px !important;
+}
+#secnav ul li ul li a:hover {
+	display:block !important;
+}
+#secnav ul li.farbe1 ul li a {
+	background-color: #4874BA !important;
+}
+#secnav ul li.farbe1 ul li a:hover {
+	background-color: #5e85c3 !important;
+}
+#secnav ul li.farbe2 ul li a {
+	background-color: #74B3FF !important;
+}
+#secnav ul li.farbe2 ul li a:hover {
+	background-color: #95c6ff !important;
+}
+#secnav ul li.farbe3 ul li a {
+	background-color: #202A58 !important;
+}
+#secnav ul li.farbe3 ul li a:hover {
+	background-color: #28356f !important;
+}
+#secnav ul li.farbe4 ul li a {
+	background-color: #193D81 !important;
+}
+#secnav ul li.farbe4 ul li a:hover {
+	background-color: #1e489b !important;
+}
+#secnav ul li.farbe5 ul li a {
+	background-color: #2C4EAC !important;
+}
+#secnav ul li.farbe5 ul li a:hover {
+	background-color: #3359c6 !important;
+}
+#secnav ul li a:hover {
+	background-color: #777;
+}
+#secnav ul li:hover ul li {
+	display: block !important;
+}
+.thirdaktiv {
+	font-weight: bold;
+}
+/************************* div #content  ****************/ 
+
+ 
+
+ /*Workaround fuer 2px Rand bei Produktuebersicht*/
+
+ #content {
+	margin-left: 10px;
+	width:932px;
+}
+#content a {
+	text-decoration: underline;
+}
+#content a:hover {
+	text-decoration: none;
+}
+/* Produktuebersicht */
+
+ 
+
+
+
+a div.pr_overview, div.pr_overview {
+	float:left;
+	width: 231px !important;
+	height: 197px !important;
+	display: inline;
+	background-color: #919191;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	color: white;
+	overflow: hidden;
+}
+#overview a {
+	text-decoration: none;
+}
+#overview a h3 {
+	font-weight:normal;
+}
+#content a.pr_overview {
+	color: white;
+	text-decoration: none !important;
+}
+div.pr_overview img {
+	border: none;
+	border-bottom: 2px solid white;
+}
+a:hover div.pr_overview {
+	background-color: #a7a7a7;
+}
+div.pr_overview h3, div.pr_overview p {
+	margin:0;
+	padding:0 10px 0 10px;
+	cursor: pointer;
+}
+div.pr_overview h3 {
+	font-size: 13px;
+	line-height: 24px;
+}
+div.pr_overview p {
+	font-size: 11px;
+	line-height: 14px;
+}
+/* Produktseite */
+
+ 
+
+ #content h1 {
+	font-size: 16px;
+	color: white;
+	background-color: #242672;
+	display: inline;
+	padding: 0 3px 0 3px;
+	margin:0;
+}
+#content h1.farbe1 {
+	background-color: #4874BA
+}
+#content h1.farbe2 {
+	background-color: #74B3FF
+}
+#content h1.farbe3 {
+	background-color: #193D81
+}
+#content h1.farbe4 {
+	background-color: #202A58
+}
+#content h1.farbe5 {
+	background-color: #2C4EAC
+}
+#content h2 {
+	font-size: 14px;
+	margin:5px 0 5px 0;
+}
+#content h3 {
+	font-size: 13px;
+}
+#content p {
+	margin:5px 0 5px 0;
+}
+#productmedia {
+	height: 260px;
+}
+#mainpics, #detailpics {
+	float: left;
+	display: inline;
+}
+#detailpics {
+	margin-left:2px !important;
+	width: 279px;
+}
+#detailpics ul, #detailpics ul li {
+	float: left;
+	display:inline;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+#detailpics .csc-textpic-imagerow, #detailpics .csc-textpic-image {
+	height: 129px !important
+}
+#detailpics .csc-textpic-imagerow-last {
+	margin-top: 2px;
+}
+#downloads {
+	float:right;
+	height: 258px;
+	width: 184px;
+	border: 1px solid #999;
+	font-size: 11px !important;
+	overflow: auto;
+}
+#downloads h1 {
+	display: block;
+	padding: 1px 0 1px 8px;
+	margin:0;
+	color: white;
+	text-transform: uppercase;
+	background-color: #999;
+	width: 176px !important;
+	font-size: 13px;
+}
+#downloads table, #downloads table td, #downloads p {
+	margin:0;
+	padding:0;
+}
+#downloads table {
+	margin:8px 0 0 8px;
+}
+#downloads a {
+	color:#666;
+	text-decoration: none;
+}
+#downloads a:hover {
+	color: #242672;
+	text-decoration: underline;
+}
+#content table.contenttable {
+	width: 100%;
+	margin:0;
+	padding:0;
+	border: 0;
+}
+#content table.contenttable td {
+	width: 50%;
+	margin:0;
+	padding:0;
+	vertical-align: top;
+}
+/* Newsseite */
+
+  
+
+  .news-list-container {
+	padding:0;
+	margin:0;
+}
+.news-list-item a {
+	color: #666;
+	text-decoration: none !important;
+	cursor: pointer;
+}
+.news-list-item {
+	float: none;
+	clear: both;
+	padding-bottom:15px !important;
+}
+.news-list-item h2 {
+	background-color: #e6e6e6;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 0 0 10px;
+	margin:0;
+	font-size:13px !important;
+}
+.news-list-item a:hover h2 {
+	background-color: #242672;
+	color: white;
+}
+.news-list-item h2 .headlineleft {
+	float:left;
+	font-weight: bold;
+}
+.news-list-item h2 .headlineright {
+	float:right;
+	padding-right:10px;
+	font-weight: normal !important;
+}
+.news-list-item p {
+	margin:4px 0 0 0;
+	padding: 0 0 0 10px;
+}
+.news-single-item, .news-single-backlink {
+	padding: 5px 0 5px 0;
+}
+.news-single-img img {
+	border: 2px solid #e6e6e6
+}
+.news-single-img a:hover img {
+	border: 2px solid #242672
+}
+/*.news-single-img .unsichtbar {
+	display:none;
+	visibility:hidden;
+}*/
+.news-single-rightbox {
+	font-size: 13px;
+}
+.news-single-item h1 {
+	font-size: 14px !important;
+	padding: 2px 10px 2px 10px !important;
+}
+.news-single-item p, .news-single-backlink, .news-single-item h2, .news-single-rightbox {
+	padding-right:10px;
+	padding-left:10px;
+}
+.news-single-img p {
+	padding:0 10px 0 0;
+}
+.news-single-backlink {
+	padding-top:30px;
+}
+/* Lightbox BG Farbe  */
+#sbOverlay {
+	background-color: #e6e6e6 !important
+}
+/*Vertriebskarte*/
+.tx-mlmaps-pi1 img {
+	border:none !important;
+	float:right;
+}
+.tx-mlmaps-layer {
+	background-color: #FFFFFF;
+	border: 1px solid #e6e6e6;
+	color: #666;
+	padding: 10px;
+	height: auto !important;
+}
+
+#content ul {
+margin:15px 0 15px 0;
+padding:0;
+}
+
+#detailpics ul {margin:0 }
+
+li.csc-textpic-image {
+margin:0 20px 0 0 ;
+padding: 0;
+list-style-type: none;
+float:left;
+}
+
+a.vetronbutton img {border:0}
+a.vetronbutton {float: right}

@@ -1,0 +1,29 @@
+/************************* Druckstylesheet ************************/  
+
+body	{ 
+	color: black;
+}
+
+/************************* HauptContainerdefinitionen ****************/  
+
+#wrapper {
+	width: 100%;
+	position: static;
+	margin:0;
+	padding:0;
+	margin: 0px auto;
+	border: none;
+
+}
+
+#mainnav, #header, #flashheader, #secnav, #breadcrumb, #footer, #langswitch{
+display:none;
+visibility: hidden;
+}
+
+#logohead {
+	height: 45px;
+	margin:0 0 20px 0;
+	float:right;
+}
+
